@@ -41,3 +41,13 @@ a {
 .paddingTB {
     padding: 40px 0;
 }
+
+.paddingSmall {
+  padding: 20px 0;
+}
+
+
+li,ul {
+  list-style-type: none;
+}
+ 
