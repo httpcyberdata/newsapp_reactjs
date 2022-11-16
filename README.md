@@ -17,8 +17,8 @@ ___________
 
 
 ## Problems in the project:
-1. 
-2.
+1. Different react-router-dom versions. The route wouldn't load the Homepage component with the parent elements as <Router> or <Routes> so i downgraded to version 5 to where <Switch> as the parent component was available and it worked!
+2. How far a typo goes! If a 3000 lines of code dummy data has a typo, like categeory than category you have to use categeory!
 
 ## How to use
 
