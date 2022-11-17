@@ -40,3 +40,18 @@ DONT
 
 ## What I learned
 Dummy Data ~ I learned what dummy data is. I always thought data was a smart thing used in innovative technologies but for a junior developer getting started, some dummy data that's not actually real helps juniors get prepared for mass real-world data. I can use the dummy data as a argument to iterate over in a function
+
+Returning html in components or otherwise
+There's many ways of doing one thing.
+Use a return statement or use ()
+`{SomeArray.map((item) => { 
+    return (
+        <section>
+        </section>
+    )
+})`
+
+`{SomeArray.map((item) => (
+    <section>
+    </section>
+))}`

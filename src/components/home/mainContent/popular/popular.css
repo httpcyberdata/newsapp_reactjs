@@ -1,0 +1,5 @@
+.popular .box {
+    background-color: #FFF;
+    display: flex;
+    position: relative;
+}
