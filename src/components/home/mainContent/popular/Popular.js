@@ -1,10 +1,11 @@
 import React from 'react';
 import { popular } from '../../../../dummyData';
 import Heading from '../../../common/Heading/Heading';
+import "./popular.css";
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
-
 import "slick-carousel/slick/slick-theme.css";
+
 const Popular = () => {
     const settings = {
         className: "center",
@@ -49,7 +50,7 @@ const Popular = () => {
                                 {val.title.slice(0,40)}...
                             </h1>
                             <div className="date">
-                                <i className="fas fa-calendary-days"></i>
+                                <i className="fas fa-calendar-days"></i>
                                 <label htmlFor="">{val.date}</label>
                             </div>
                             <div className="comment">
