@@ -18,9 +18,9 @@ main .container {
     }
     
     .mainContent {
-        width: 75%;
+        width: 100%;
     }
     .sideContent {
-        width: 23%;
+        width: 100%;
     }
 }
