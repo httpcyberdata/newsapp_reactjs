@@ -1,23 +1,32 @@
 import React from 'react'
+import './life.css';
+import { lifestyle } from '../../../../dummyData';
 import Slider from 'react-slick';
-import { ppost } from '../../../../dummyData';
 import Heading from '../../../common/Heading/Heading';
-import './ppost.css';
-const Ppost = () => {
+const Life = () => {
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     }
   return (
-    <>
-        <section className="popularPost">
-                <Heading title="Popular Posts"/>
+    <div>
+        <section className="popularPost life">
+                <Heading title="Life Style"/>
                 <div className="content">
                 <Slider {...settings} >
-                {ppost.map((val) => {
+                {lifestyle.map((val) => {
                     return (
                     <div className="items">
                         <div className="box shadow">
@@ -46,8 +55,8 @@ const Ppost = () => {
             </Slider>
             </div>
         </section>
-    </>
+    </div> 
   )
 }
 
-export default Ppost;
+export default Life;

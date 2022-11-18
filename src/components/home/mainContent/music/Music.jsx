@@ -1,45 +1,35 @@
-import React from 'react';
-import { popular } from '../../../../dummyData';
-import Heading from '../../../common/Heading/Heading';
-import "./popular.css";
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react'
+import './Music.css';
+import Slider from "react-slick"
+import Heading from "../../../common/Heading/Heading";
+import { popular } from "../../../../dummyData"
 
-const Popular = () => {
+const Music = () => {
     const settings = {
         className: "center",
         centerMode: false,
         infinite: true,
         centerPadding: "0",
-        slidesToShow: 2,
+        slidesToShow: 1,
         speed: 500,
-        rows: 4,
-        slidesPerRow: 1, 
-        dots: false,
-        responsive: [
-            {
-                breakpoint: 800,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    rows: 4
-                }
-            }
-        ]
+        rows: 2,
+        slidesPerRow: 1,
+        dots: false
 
     }
-
   return (
-    <>
-        <div className="popular">
-            <Heading title="Popular"/>
+    <div>
+        <section className="music">
+            <Heading title="Music News"/>
+            <div className="content">
             <Slider {...settings} >
-            {popular.map((val) => {
+            {popular
+            .filter((val) => val.catgeory === 'fun')
+            .map((val) => {
                 return (
                 <div className="items">
-                    <div className="box shadow">
-                        <div className="images row">
+                    <div className="box shadow flexSB">
+                        <div className="images">
                             <div className="img">
                                 <img src={val.cover} alt="" />
                             </div>
@@ -47,7 +37,7 @@ const Popular = () => {
                                 <span>{val.catgeory}</span>
                             </div>
                         </div>
-                        <div className="text row">
+                        <div className="text">
                             <h1 className="title">
                                 {val.title.slice(0,40)}...
                             </h1>
@@ -55,7 +45,12 @@ const Popular = () => {
                                 <i className="fas fa-calendar-days"></i>
                                 <label htmlFor="">{val.date}</label>
                             </div>
+                            <p className="desc">
+                                {val.desc.slice(0,250)}...
+                            </p>
                             <div className="comment">
+                                <i className="fas fa-share"></i>
+                                <label htmlFor="">Share / </label>
                                 <i className="fas fa-comment"></i>
                                 <label htmlFor="">{val.date}</label>
                             </div>
@@ -66,8 +61,8 @@ const Popular = () => {
             })}
         </Slider>
         </div>
-    </>
+        </section>
+    </div>
   )
 }
-
-export default Popular;
+export default Music;
