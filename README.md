@@ -25,7 +25,7 @@ ___________
 ### Photos of project:
 ![](/public//images//newsappreactjs_image.png)
 ![](/public//images/newsapp_reactjs_image2.png)
-![]()
+![](/public/images//popularpost_section.gif)
 
 ## Apps used:
 	- Visual Studio Code
