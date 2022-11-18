@@ -41,9 +41,9 @@ DONT
 
 ## What I learned
 Dummy Data ~ I learned what dummy data is. I always thought data was a smart thing used in innovative technologies but for a junior developer getting started, some dummy data that's not actually real helps juniors get prepared for mass real-world data. I can use the dummy data as a argument to iterate over in a function
+I learned much about the react-slick library from creating many components and importing the Slider module and defining and configuring the settings over and over again as in customizng how many slides to show, the speed of the carousel and such.
 
-Returning html in components or otherwise
-There's many ways of doing one thing.
+I learned the two ways of returning html in React components. There's many ways of doing one thing.
 Use a return statement or use ()
 ``{SomeArray.map((item) => { 
     return (
