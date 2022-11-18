@@ -16,3 +16,8 @@
     display: flex;
     justify-content: center;
 }
+
+.sideContent .heading h6 {
+     background-color: #000;
+}
+  

@@ -6,9 +6,10 @@ Tutorial description: Create News App using React Js | News App with Different N
 ___________
 
 ### Software versions
-	NPM version: 
-	Node version: 
+	NPM version: 8.19.2
+	Node version: 16.17.0
     React-Router-Dom: 5.3.4
+    React version: 18.2.0
 
 ## How to run 
 1. Clone / Download
@@ -44,14 +45,14 @@ Dummy Data ~ I learned what dummy data is. I always thought data was a smart thi
 Returning html in components or otherwise
 There's many ways of doing one thing.
 Use a return statement or use ()
-`{SomeArray.map((item) => { 
+``{SomeArray.map((item) => { 
     return (
         <section>
         </section>
     )
-})`
+})``
 
-`{SomeArray.map((item) => (
+``{SomeArray.map((item) => (
     <section>
     </section>
-))}`
+))}``
