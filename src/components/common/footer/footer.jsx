@@ -25,17 +25,59 @@ const Footer = () => {
                 </div>
             </div>
             <div className="box">
+                <h3>CRICKET</h3>
                 <div className="item">
                     <img src="../images/hero/hero3.jpg" alt="" />
                     <p>US Promises to give Intel aid to locate the soldiers</p>
                 </div>
                 <div className="item">
                     <img src="../images/hero/hero1.jpg" alt="" />
-                    <p>Cespedes play the winning Baseball Game</p>
+                    <p>Renewable energy dead as industry waits for Policy</p>
                 </div>
             </div>
+            <div className="box">
+                <h3>LABELS</h3>
+                <ul>
+                    <li>
+                        <span>Boxing</span>
+                        <label>
+                            (5)
+                        </label>
+                    </li>
+                </ul>
+            </div>
+                <ul>
+                    <li>
+                        <span>Fashion</span>
+                        <label>
+                            (6)
+                        </label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span>Health</span>
+                        <label>
+                            (7)
+                        </label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span>Nature</span>
+                        <label>
+                            (7)
+                        </label>
+                    </li>
+                </ul>
         </div>
       </footer>
+      <div className="legal">
+        <div className="container flexSB">
+            <p>© all rights reserved</p>
+        </div>
+        <p>Made with <i className="fa fa-heart"></i> by Gorkcoder</p>
+      </div>
     </>
     )
 }
