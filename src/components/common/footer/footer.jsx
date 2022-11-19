@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './footer.css';
 const Footer = () => {
     return (
     <>
@@ -9,7 +9,7 @@ const Footer = () => {
                 <img src="../images/tech-logo-footer.png" alt="" />
                 <p>Busan is an amazing magazine Blogger theme that is easy to customize for your needs</p>
                 <i className="fa fa-envelope"></i>
-                <span>hello@beatufiul.com</span>
+                <span>hello@beatufiul.com</span> <br/>
                 <i className="fa fa-headphones"></i>
                 <span>+1 602521488</span>
             </div>
@@ -44,25 +44,18 @@ const Footer = () => {
                             (5)
                         </label>
                     </li>
-                </ul>
-            </div>
-                <ul>
                     <li>
                         <span>Fashion</span>
                         <label>
                             (6)
                         </label>
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <span>Health</span>
                         <label>
                             (7)
                         </label>
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <span>Nature</span>
                         <label>
@@ -70,13 +63,14 @@ const Footer = () => {
                         </label>
                     </li>
                 </ul>
+            </div>
         </div>
       </footer>
       <div className="legal">
         <div className="container flexSB">
             <p>© all rights reserved</p>
+            <p> Made with <i className="fa fa-heart"></i> by Gorkcoder</p>
         </div>
-        <p>Made with <i className="fa fa-heart"></i> by Gorkcoder</p>
       </div>
     </>
     )

@@ -1,22 +1,18 @@
 .tpost .box {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 .tpost .img {
-    width: 100px;
-    height: 80px;
+  width: 100px;
+  height: 80px;
 }
-
 .tpost img {
-    width: 100px;
-    height: 80px;
-    object-fit: cover;
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
 }
-
 .tpost .text {
-    padding: 0 15px;
+  padding: 0 15px;
 }
-
 .tpost h1 {
     font-size: 15px;
 }
@@ -27,7 +23,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .tpost img,
+    .tpost .img,
     .tpost img {
         width: 200px;
         height: 150px;
@@ -35,6 +31,5 @@
 
     .tpost .text {
         width: 100%;
-        text-align: center;
     }
 }
