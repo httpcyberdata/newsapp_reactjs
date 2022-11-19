@@ -3,14 +3,15 @@ import { gallery } from '../../../../dummyData';
 import Heading from '../../../common/Heading/Heading';
 import SocialMedia from '../social/SocialMedia';
 import Tpost from '../tpost/Tpost';
+import Slider from 'react-slick';
 import './side.css';
 const Side = () => {
     const settings = {
-        dots: true,
-        infinite: true,
+        dots: false,
+        infinite: false,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1, 
     }
      const category = ["world", "travel", "sport", "fun", "health", "fashion", "business", "technology"];
   return (
@@ -36,6 +37,7 @@ const Side = () => {
         <Tpost />
         <section className="catgeorys">
             <Heading title="Categories"/>
+            
             {category.map((val) => {
                 return (
                     <div className="category category1">
@@ -46,7 +48,7 @@ const Side = () => {
         </section>
         <section className="gallery">
             <Heading title="Gallery"/>
-            <Slide {...settings} />
+            <Slider {...settings}>
             {gallery.map((val) => {
                 return (
                     <div className="img">
@@ -54,6 +56,7 @@ const Side = () => {
                     </div>
                 )
             })}
+            </Slider>
         </section>
     </div>
   )

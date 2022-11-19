@@ -12,6 +12,7 @@ export const App = () => {
         <Switch>
             <Route exact path="/" component={Homepage} />
         </Switch>
+        <Footer />
         </BrowserRouter>
     </div>
   )
