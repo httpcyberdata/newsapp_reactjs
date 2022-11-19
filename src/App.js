@@ -7,8 +7,8 @@ import Footer from './components/common/footer/footer';
 export const App = () => {
   return (
     <div>
-        <Header />
         <BrowserRouter>
+        <Header />
         <Switch>
             <Route exact path="/" component={Homepage} />
         </Switch>
