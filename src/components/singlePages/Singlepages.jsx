@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import { hero } from '../../dummyData';
 import SinglePageSlider from './SinglePageSlider/SinglePageSlider';
 import './singlepage.css'
 const Singlepages = () => {
-    const { id } = useParams(null)
+    const { id } = useParams()
     const [item, setItem] = useState(null)
-
+  
+    useEffect(() => {
+      const item = hero.find((item) => item.id === parseInt(id))
+      if (item) {
+        setItem(item)
+      }
+    }, [id])
+  
   return (
   <> 
     {item ? (
@@ -19,7 +27,8 @@ const Singlepages = () => {
                 </section>
             </div>
         </main>
-        ) : ( <h1>not found</h1>) }
+        ) : ( <h1>not found</h1>
+        )}
   </>
   )
 }
