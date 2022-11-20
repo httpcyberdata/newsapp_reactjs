@@ -4,16 +4,19 @@ import './App.css'
 import { Header } from './components/common/header/Header';
 import  Homepage  from './components/home/Homepage';
 import Footer from './components/common/footer/footer';
+import Culture from './components/culture/Culture';
+import SinglePages from './components/singlePages/Singlepages';
+import { useHistory, Redirect } from 'react-router-dom';
 export const App = () => {
   return (
     <div>
-        <BrowserRouter>
         <Header />
         <Switch>
-            <Route exact path="/" component={Homepage} />
-        </Switch>
+            <Route exact path="/" component={Homepage}/>
+            <Route exact path="/singlepage/:id" component={SinglePages} />
+            <Route exact={true} path="/culture" component={Culture} />
+          </Switch>
         <Footer />
-        </BrowserRouter>
     </div>
   )
 }
