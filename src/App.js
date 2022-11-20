@@ -7,7 +7,7 @@ import Footer from './components/common/footer/footer';
 import Culture from './components/culture/Culture';
 import SinglePages from './components/singlePages/Singlepages';
 import { useHistory, Redirect } from 'react-router-dom';
-export const App = () => {
+const App = () => {
   return (
     <div>
         <Header />
