@@ -21,7 +21,7 @@ const SinglePageSlider = () => {
       ],
 
   }
-  return (
+ return (
     <>
       <section className='singlePopular'>
         <div className='content'>

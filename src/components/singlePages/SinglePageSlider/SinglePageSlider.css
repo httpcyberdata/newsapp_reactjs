@@ -8,26 +8,17 @@
   cursor: pointer;
 }
 .singlePopular img {
-  width: 180px;
+  width: 165px;
   height: 100px;
-  margin-left: 20px;
   border-radius: 5px;
 }
 .singlePopular .text {
   position: absolute;
   bottom: 30px;
   left: 0;
-  text-align: center;
   padding: 10px;
-  overflow: hidden;
-  z-index: 2;
-  font-size: 10px;
   color: #fff;
 }
 .singlePopular .text h1 {
   font-size: 13px;
-}
-
-.images img {
-  margin-right: 90px;
 }
