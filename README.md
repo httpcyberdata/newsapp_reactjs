@@ -11,6 +11,7 @@ ___________
     React-Router-Dom: 5.3.4
     React version: 18.2.0
 
+//   "react-router-dom": "5.3.4",
 ## How to run 
 1. Clone / Download
 2. yarn install
@@ -25,8 +26,10 @@ ___________
 
 ### Photos of project:
 ![](/public//images//newsappreactjs_image.png)
-![](/public//images/newsapp_reactjs_image2.png)
+![](/public//images/newsapp_gif1.png)
 ![](/public/images//popularpost_section.gif)
+![](/public/images/newsapp_gif.gif)
+
 
 ## Apps used:
 	- Visual Studio Code
